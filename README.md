@@ -1,0 +1,2 @@
+# Swaggy
+Restaurant management application
