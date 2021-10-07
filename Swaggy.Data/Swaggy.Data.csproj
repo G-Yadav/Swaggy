@@ -1,11 +1,11 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Swaggy.Data\Swaggy.Data.csproj" />
+    <ProjectReference Include="..\Swaggy.Core\Swaggy.Core.csproj" />
   </ItemGroup>
 
 </Project>
