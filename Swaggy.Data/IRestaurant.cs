@@ -6,6 +6,6 @@ namespace Swaggy.Data
 {
     public interface IRestaurant
     {
-        IEnumerable<Restaurant> GetAll();
+        IEnumerable<Restaurant> GetRestaurantByName(string name=null);
     }
 }

@@ -16,6 +16,9 @@ namespace Swaggy.Pages.Restaurants
         public IConfiguration Config { get; }
 
         private readonly IRestaurant restaurantData;
+        
+        [BindProperty(SupportsGet =true)]
+        public string SearchTerm { get; set; }
 
         public IEnumerable<Restaurant> Restaurants { get; set; }
 
@@ -28,7 +31,7 @@ namespace Swaggy.Pages.Restaurants
         public void OnGet()
         {
             Message = Config["message"];
-            Restaurants = restaurantData.GetAll();
+            Restaurants = restaurantData.GetRestaurantByName(SearchTerm);
         }
     }
 }
