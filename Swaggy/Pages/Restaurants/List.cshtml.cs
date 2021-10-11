@@ -23,7 +23,6 @@ namespace Swaggy.Pages.Restaurants
         {
             Config = config;
             this.restaurantData = data;
-
         }
 
         public void OnGet()
