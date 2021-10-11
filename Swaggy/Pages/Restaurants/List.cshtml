@@ -6,6 +6,13 @@
 <h1>Restaurants</h1>
 <h2>Welcome to hotel california</h2>
 
+<form method="get">
+    <div class="input-group">
+        <input type="search" class="form-control" asp-for="SearchTerm" />
+        <input type="submit" value="Search" />
+    </div>
+</form>
+
 <table class="table">
     @foreach (var restaurant in Model.Restaurants)
     {
