@@ -18,6 +18,11 @@ namespace Swaggy.Data
             };
         }
 
+        public Restaurant GetRestaurantById(int restaurantId)
+        {
+            return restaurants.FirstOrDefault(r => r.Id.Equals(restaurantId));
+        }
+
         public IEnumerable<Restaurant> GetRestaurantByName(string name = null)
         {
             return from r in restaurants

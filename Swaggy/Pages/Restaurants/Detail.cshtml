@@ -1,0 +1,13 @@
+﻿@page "{restaurantId:int}"
+@model Swaggy.Pages.Restaurants.DetailModel
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h2>@Model.Restaurant.Name</h2>
+
+<div>Id: <span>@Model.Restaurant.Id</span></div>
+<div>Location: <span>@Model.Restaurant.Location</span></div>
+<div>Cuisine: <span>@Model.Restaurant.CuisineType</span></div>
+
+<a asp-page="./List" class="btn btn-primary">All Restaurants</a>
