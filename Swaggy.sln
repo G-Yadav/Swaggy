@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swaggy", "Swaggy\Swaggy.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swaggy.Core", "Swaggy.Core\Swaggy.Core.csproj", "{7112497E-C91D-42E2-954D-9E30F5391569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Swaggy.Data", "Swaggy.Data\Swaggy.Data.csproj", "{B6801EBE-4D66-4670-A5F4-652347BBD116}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swaggy.Data", "Swaggy.Data\Swaggy.Data.csproj", "{B6801EBE-4D66-4670-A5F4-652347BBD116}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

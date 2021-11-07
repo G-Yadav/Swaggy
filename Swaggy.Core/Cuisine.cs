@@ -2,6 +2,7 @@
 {
     public enum Cuisine
     {
+        None,
         Mexican,
         Indian,
         Chinese,

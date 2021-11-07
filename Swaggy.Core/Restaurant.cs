@@ -1,5 +1,7 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace Swaggy.Core
@@ -7,7 +9,9 @@ namespace Swaggy.Core
     public class Restaurant
     {
         public int Id { get; set; }
+        [Required, StringLength(20)]
         public string Name { get; set; }
+        [Required, StringLength(255)]
         public string Location { get; set; }
         public Cuisine CuisineType { get; set; }
     }

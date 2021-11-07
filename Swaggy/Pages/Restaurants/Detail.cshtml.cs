@@ -13,6 +13,8 @@ namespace Swaggy.Pages.Restaurants
     {
         public Restaurant Restaurant { get; private set; }
         public IRestaurant Restaurants { get; }
+        [TempData]
+        public string Message { get; set; }
 
         public DetailModel(IRestaurant restaurants)
         {

@@ -1,0 +1,30 @@
+﻿@page "{restaurantId:int?}"
+@model Swaggy.Pages.Restaurants.EditModel
+@{
+    ViewData["Title"] = "Edit Restaurant";
+}
+
+<h2>Editing @Model.Restaurant.Name</h2>
+<form method="post">
+    <input type="hidden" asp-for="Restaurant.Id"/>
+    <div class="form-group">
+        <label asp-for="Restaurant.Name" class="col-form-label"></label>
+        <input type="text" asp-for="Restaurant.Name" class="form-control" />
+        <span class="text-danger" asp-validation-for="Restaurant.Name"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.Location"></label>
+        <input type="text" asp-for="Restaurant.Location" class="form-control" />
+        <span class="text-danger" asp-validation-for="Restaurant.Location"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Restaurant.CuisineType"></label>
+        <select class="form-control" asp-for="Restaurant.CuisineType" asp-items="@Model.cuisines">
+        </select>
+        @*@Html.DropDownListFor(m => m.Restaurant.CuisineType,
+        Model.cuisines,
+        new { @class = "form-control" })*@
+    </div>
+
+    <input type="submit" class="btn btn-primary" value="Submit" />
+</form>

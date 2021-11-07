@@ -8,5 +8,8 @@ namespace Swaggy.Data
     {
         IEnumerable<Restaurant> GetRestaurantByName(string name=null);
         Restaurant GetRestaurantById(int restaurantId);
+        Restaurant UpdateRestaurant(Restaurant updatedRestaurant);
+        int commit();
+        Restaurant Add(Restaurant restaurant);
     }
 }
