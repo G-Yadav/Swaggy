@@ -31,6 +31,16 @@ namespace Swaggy.Data
             return 0;
         }
 
+        public Restaurant Delete(int id)
+        {
+            var restaurant = restaurants.FirstOrDefault(x => x.Id == id);
+            if(restaurant != null)
+            {
+                restaurants.Remove(restaurant);
+            }
+            return restaurant;
+        }
+
         public Restaurant GetRestaurantById(int restaurantId)
         {
             return restaurants.FirstOrDefault(r => r.Id.Equals(restaurantId));

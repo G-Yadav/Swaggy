@@ -11,5 +11,6 @@ namespace Swaggy.Data
         Restaurant UpdateRestaurant(Restaurant updatedRestaurant);
         int commit();
         Restaurant Add(Restaurant restaurant);
+        Restaurant Delete(int id);
     }
 }
